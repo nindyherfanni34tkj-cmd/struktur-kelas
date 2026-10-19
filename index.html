@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelas XI TKJ 2 — Struktur Organisasi Kelas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#beranda" class="brand">
+      <span class="brand-dot"></span> XI TKJ 2
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+      <li><a href="#profil" class="nav-link">Profil Kelas</a></li>
+      <li><a href="#struktur" class="nav-link">Struktur Organisasi</a></li>
+      <li><a href="#piket" class="nav-link">Jadwal Piket</a></li>
+      <li><a href="#foto" class="nav-link">Foto Kelas</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HERO / BERANDA ================= -->
+<header class="hero" id="beranda">
+  <div class="hero-bg">
+    <!-- GANTI gambar di bawah ini dengan foto kelas asli:
+         cukup ubah nilai background-image pada class .hero-bg di style.css,
+         atau tambahkan <img> di sini lalu sesuaikan CSS-nya. -->
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="particles" id="particles"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow">✦ XI TKJ 2 ✦</p>
+    <h1 class="hero-title">STRUKTUR ORGANISASI<br>KELAS</h1>
+    <p class="hero-subtitle">Bersama, Kompak, Bertanggung Jawab</p>
+    <a href="#struktur" class="btn btn-primary">Lihat Struktur Kelas</a>
+  </div>
+
+  <div class="scroll-cue">
+    <span></span>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= PROFIL KELAS ================= -->
+<section class="section" id="profil">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Kenalan Yukk</p>
+    <h2 class="section-title reveal">Profil Kelas</h2>
+    <p class="section-desc reveal">Orang-orang hebat di balik kekompakan kelas X TKJ 2.</p>
+
+    <div class="profile-grid">
+      <div class="profile-card featured reveal">
+        <div class="profile-icon">👨‍🏫</div>
+        <p class="profile-role">Wali Kelas</p>
+        <h3 class="profile-name">Muhammad Fajrul Falah</h3>
+      </div>
+      <div class="profile-card reveal">
+        <div class="profile-icon">👑</div>
+        <p class="profile-role">Ketua Kelas</p>
+        <h3 class="profile-name">Raya Hayundha Luhung</h3>
+      </div>
+      <div class="profile-card reveal">
+        <div class="profile-icon">🤝</div>
+        <p class="profile-role">Wakil Ketua</p>
+        <h3 class="profile-name">Novero Wahyu Dhasilva</h3>
+      </div>
+      <div class="profile-card reveal">
+        <div class="profile-icon">📝</div>
+        <p class="profile-role">Sekretaris</p>
+        <h3 class="profile-name">Tehora Renawai</h3>
+      </div>
+      <div class="profile-card reveal">
+        <div class="profile-icon">💰</div>
+        <p class="profile-role">Bendahara 1</p>
+        <h3 class="profile-name">Nindy Syara Herfanni</h3>
+      </div>
+      <div class="profile-card reveal">
+        <div class="profile-icon">💰</div>
+        <p class="profile-role">Bendahara 2</p>
+        <h3 class="profile-name">Muhammad Habibie Setyawan</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STRUKTUR ORGANISASI ================= -->
+<section class="section section-alt" id="struktur">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Bagan</p>
+    <h2 class="section-title reveal">Struktur Organisasi</h2>
+    <p class="section-desc reveal">Alur tanggung jawab dan kepemimpinan di kelas XI TKJ 2.</p>
+
+    <div class="org-chart">
+      <div class="org-row reveal">
+        <div class="org-node top">
+          <div class="org-avatar">👨‍🏫</div>
+          <p class="org-role">Wali Kelas</p>
+          <h4 class="org-name">Muhammad Fajrul Falah</h4>
+        </div>
+      </div>
+
+      <div class="org-connector single"></div>
+
+      <div class="org-row reveal">
+        <div class="org-node top">
+          <div class="org-avatar">👑</div>
+          <p class="org-role">Ketua Kelas</p>
+          <h4 class="org-name">Raya Hayundha Luhung</h4>
+        </div>
+      </div>
+
+      <div class="org-connector branch"></div>
+
+      <div class="org-row branches reveal">
+        <div class="org-node">
+          <div class="org-avatar">🤝</div>
+          <p class="org-role">Wakil Ketua</p>
+          <h4 class="org-name">Novero Wahyu Dhasilva</h4>
+        </div>
+        <div class="org-node">
+          <div class="org-avatar">📝</div>
+          <p class="org-role">Sekretaris</p>
+          <h4 class="org-name">Tehora Renawai</h4>
+        </div>
+        <div class="org-node">
+          <div class="org-avatar">💰</div>
+          <p class="org-role">Bendahara 1</p>
+          <h4 class="org-name">Nindy Syara Herfanni</h4>
+        </div>
+        <div class="org-node">
+          <div class="org-avatar">💰</div>
+          <p class="org-role">Bendahara 2</p>
+          <h4 class="org-name">Muhammad Habibie Setyawan</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JADWAL PIKET ================= -->
+<section class="section" id="piket">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Rutinitas Mingguan</p>
+    <h2 class="section-title reveal">🧹 Jadwal Piket Kelas</h2>
+    <p class="section-desc reveal">Jaga kelas tetap Bersih dan Nyaman, Giliran demi Giliran.</p>
+
+    <div class="piket-grid">
+
+      <div class="piket-card reveal">
+        <div class="piket-head"><span class="piket-icon">🧹</span><h3>Senin</h3></div>
+        <ol class="piket-list">
+          <li>Pramudya Sekar Arafah</li>
+          <li>Novero Wahyu Dhasilva</li>
+          <li>Almira Talita Zalfa</li>
+          <li>Muhammad Mirza Firmanda</li>
+          <li>Danadyaksa Kayana Syahputra</li>
+          <li>Muhammad Iqbal Bajideeh</li>
+        </ol>
+      </div>
+
+      <div class="piket-card reveal">
+        <div class="piket-head"><span class="piket-icon">🧹</span><h3>Selasa</h3></div>
+        <ol class="piket-list">
+          <li>Qiarra noe mahyyasah andrian</li>
+          <li>Ananda Rifqi Aditya</li>
+          <li>Althafia Jihan Navisa</li>
+          <li>Muhammad Habibie Setyawan</li>
+          <li>Bima Nawa Ananda Dafinza</li>
+          <li>Nindy Syara Herfanni</li>
+        </ol>
+      </div>
+
+      <div class="piket-card reveal">
+        <div class="piket-head"><span class="piket-icon">🧹</span><h3>Rabu</h3></div>
+        <ol class="piket-list">
+          <li>Shofiyulloh Azzam</li>
+          <li>Pandu Pranata Putra</li>
+          <li>Gadis Tatya Ramadhani</li>
+          <li>Talitha Ardelia</li>
+          <li>Muhammad Adikara</li>
+          <li>Muhammad Nur Affan Rezky</li>
+        </ol>
+      </div>
+
+      <div class="piket-card reveal">
+        <div class="piket-head"><span class="piket-icon">🧹</span><h3>Kamis</h3></div>
+        <ol class="piket-list">
+          <li>Argya Tri Ramadani</li>
+          <li>Alfian Rizqie Suryahadinata</li>
+          <li>Raffi Javas Nararya</li>
+          <li>Nobel Muhammad Kaisar Al Fikri</li>
+          <li>Raya Hayundha Luhung</li>
+          <li>Aditya Kurniawan Arifin</li>
+          <li>Tehora Renawia</li>
+        </ol>
+      </div>
+
+      <div class="piket-card reveal">
+        <div class="piket-head"><span class="piket-icon">🧹</span><h3>Jumat</h3></div>
+        <ol class="piket-list">
+          <li>Digit Giantino Rafif</li>
+          <li>Muhammad Hilmi Ardiyansyah</li>
+          <li>Reyvano Diffa Ramadhan</li>
+          <li>Aliring Hayyu Wening</li>
+          <li>Naila Urwatul Lutfi'ah</li>
+          <li>Aurora Yuli Kawati Agustian</li>
+          <li>Brelian Afisionando</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOTO KELAS ================= -->
+<section class="section section-alt" id="foto">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Kenangan</p>
+    <h2 class="section-title reveal">Foto Kelas</h2>
+    <p class="section-desc reveal">Momen Kebersamaan Kelas XI TKJ 2.</p>
+
+    <!--
+      CARA MENGGANTI FOTO KELAS:
+      1. Simpan foto kelas kalian di folder yang sama dengan file ini,
+         misalnya dengan nama "foto-kelas-1.jpg", "foto-kelas-2.jpg", dst.
+      2. Ganti setiap <div class="slide"> di bawah ini menjadi:
+         <div class="slide"><img src="foto-kelas-1.jpg" alt="Foto Kelas"></div>
+      3. Boleh menambah slide sebanyak foto yang kalian punya, cukup salin
+         pola <div class="slide">...</div> di bawah ini.
+    -->
+    <div class="slideshow reveal" id="slideshow">
+      <div class="slide-track" id="slideTrack">
+        <div class="slide">
+          <img src="nindy.jpg.jpeg">
+            <span class="ph-icon">🖼️</span>
+            <span>Foto Kelas</span>
+        
+      <button class="slide-btn prev" id="slidePrev" aria-label="Foto sebelumnya">‹</button>
+      <button class="slide-btn next" id="slideNext" aria-label="Foto berikutnya">›</button>
+
+      <div class="slide-dots" id="slideDots"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->       
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-title">Kelas Kita — Bersama, Kompak, Bertanggung Jawab</p>
+    <p class="footer-copy">©️ 2026 Struktur Organisasi Kelas</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
